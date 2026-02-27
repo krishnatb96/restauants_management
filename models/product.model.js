@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
   hotelId: {
@@ -31,4 +31,5 @@ const productSchema = new mongoose.Schema({
 },{
     timestamps: true,
 });
-export default mongoose.model("Product", productSchema);    
+const Product = mongoose.model("Product", productSchema);    
+module.exports = Product;

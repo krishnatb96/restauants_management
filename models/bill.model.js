@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
 
+const mongoose = require("mongoose");
 const billSchema = new mongoose.Schema({
   hotelId: {
     type: mongoose.Schema.Types.ObjectId,   
@@ -36,4 +36,5 @@ const billSchema = new mongoose.Schema({
     },},{
     timestamps: true,
 });
-export default mongoose.model("Bill", billSchema);    
+const Bill = mongoose.model("Bill", billSchema);    
+module.exports = Bill;

@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const subscriptionSchema = new mongoose.Schema({
   hotelId: {
@@ -20,4 +20,5 @@ const subscriptionSchema = new mongoose.Schema({
 },{
     timestamps: true,
 });
-export default mongoose.model("Subscription", subscriptionSchema);
+const Subscription = mongoose.model("Subscription", subscriptionSchema);
+module.exports = Subscription;

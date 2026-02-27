@@ -12,4 +12,14 @@
   - dayjs
 
 
-# Created the folder structure  
+# Created the folder structure 
+# Models
+  - hotel
+  - bill
+  - product
+  - user
+  - subscription
+# Middleware
+  - auth
+  - role 
+  - subscription
